@@ -41,7 +41,6 @@
 
             <h1 class="mt-4">Búsqueda</h1>
 
-            <!-- Búsqueda por Fecha -->
             <form action="TurnoSv" method="GET">
                 <div class="form-group">
                     <label for="busquedaFecha">Búsqueda por Fecha:</label>
@@ -50,7 +49,6 @@
                 <button type="submit" class="btn btn-primary">Buscar por Fecha</button>
             </form>
 
-            <!-- Búsqueda por Estatus -->
             <form action="TurnoSv" method="GET">
                 <div class="form-group">
                     <label for="busquedaStatus">Búsqueda por Estatus:</label>
@@ -63,7 +61,7 @@
                 <button type="submit" class="btn btn-primary">Buscar por Estatus</button>
             </form>
 
-            <!-- Mensaje de éxito o error -->
+
             <%
                 String mensaje = (String) request.getAttribute("mensaje");
                 if (mensaje != null && !mensaje.isEmpty()) {
@@ -75,7 +73,6 @@
                 }
             %>
 
-            <!-- Tabla de Resultados por Fecha -->
             <div class="results-table mt-4">
                 <h3>Resultados por Fecha</h3>
                 <table class="table">
@@ -122,7 +119,7 @@
                 </table>
             </div>
 
-            <!-- Tabla de Resultados por Estatus -->
+
             <div class="results-table mt-4">
                 <h3>Resultados por Estatus</h3>
                 <table class="table">

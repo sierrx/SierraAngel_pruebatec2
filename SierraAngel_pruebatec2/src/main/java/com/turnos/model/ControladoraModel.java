@@ -32,8 +32,6 @@ public class ControladoraModel {
     controlPersistencia.actualizarEstadoTurno(idTurno, nuevoEstado);
     }
     
-    
-    
-    
+  
 }
 

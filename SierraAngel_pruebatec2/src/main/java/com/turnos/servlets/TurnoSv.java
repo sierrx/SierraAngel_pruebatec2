@@ -20,26 +20,25 @@ public class TurnoSv extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Vacío, puede eliminarse o implementarse según sea necesario
+       
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Para búsqueda por fecha
+        
         String busquedaFecha = request.getParameter("busquedaFecha");
         if (busquedaFecha != null && !busquedaFecha.isEmpty()) {
             try {
-                LocalDate fecha = LocalDate.parse(busquedaFecha); // Convertimos el String a LocalDate
+                LocalDate fecha = LocalDate.parse(busquedaFecha);
                 List<Turno> listaTurno = control.buscarPorFecha(fecha);
                 HttpSession miSesion = request.getSession();
-                miSesion.setAttribute("listaTurnoFecha", listaTurno); // Clave para diferenciar búsquedas
+                miSesion.setAttribute("listaTurnoFecha", listaTurno); 
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
-        // Para búsqueda por estatus
         String busquedaStatus = request.getParameter("busquedaStatus");
         if (busquedaStatus != null && !busquedaStatus.isEmpty()) {
             List<Turno> listaTurnos = control.buscarPorStatus(busquedaStatus);
@@ -53,7 +52,6 @@ public class TurnoSv extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Obtener la fecha como String desde el formulario
         String fechaString = request.getParameter("fecha");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate fecha = LocalDate.parse(fechaString, formatter);

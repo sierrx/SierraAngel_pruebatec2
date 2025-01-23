@@ -1,6 +1,4 @@
 com\turnos\persistencia\ControladoraPersistencia.class
-com\turnos\model\Usuario.class
-com\turnos\persistencia\UsuarioJpaController.class
 com\turnos\model\ControladoraModel.class
 com\turnos\persistencia\CiudadanoJpaController.class
 com\turnos\model\Ciudadano.class
@@ -8,11 +6,9 @@ com\turnos\persistencia\exceptions\PreexistingEntityException.class
 com\turnos\servlets\ActualizarEstadoSv.class
 com\turnos\model\Turno_.class
 com\turnos\persistencia\exceptions\NonexistentEntityException.class
-com\turnos\servlets\LoginSv.class
 com\turnos\persistencia\TurnoJpaController.class
 com\turnos\model\Turno.class
 com\turnos\persistencia\exceptions\IllegalOrphanException.class
 com\turnos\servlets\EliminarSv.class
-com\turnos\model\Usuario_.class
 com\turnos\servlets\TurnoSv.class
 com\turnos\model\Ciudadano_.class

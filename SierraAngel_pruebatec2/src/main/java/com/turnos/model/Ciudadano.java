@@ -42,7 +42,6 @@ public class Ciudadano implements Serializable {
         this.listaTurno = listaTurno;
     }
     
-    //getters n setters
 
     public Long getId() {
         return id;
@@ -84,7 +83,6 @@ public class Ciudadano implements Serializable {
         this.listaTurno = listaTurno;
     }
     
-    //to string
 
     @Override
     public String toString() {

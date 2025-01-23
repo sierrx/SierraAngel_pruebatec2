@@ -26,7 +26,6 @@ public class EliminarSv extends HttpServlet {
             request.setAttribute("mensaje", "Error al eliminar el turno: " + e.getMessage());
         }
 
-        // Redirigir a la página principal o a la búsqueda
         response.sendRedirect("index.jsp");
     }
 }
