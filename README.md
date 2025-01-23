@@ -26,7 +26,7 @@ Se incluyen dos apartados de búsqueda uno por fecha y otro por el Estatus del T
 -**com.turnos.servlets**: Aqui encontramos los servlets para Actualizar un turno, Eliminar un turno y obtener los datos del turno provenientes JSP
 
 ## UML
-![Diagrama UML](SierraAngel_pruebatec2/diagramaUml.png)
+![Diagrama UML](SierraAngel_pruebatec2/main/diagramaUml.png)
 
 Este diagrama representa la arquitectura del sistema respetando las capas **JSP → Servlets → Modelo (ControladoraModel) → Persistencia (ControladoraPersistencia) → BD (JpaControllers)**. A continuación, se explica cada componente y sus relaciones:
 
