@@ -77,7 +77,7 @@ public class TurnoJpaController implements Serializable {
             List<Turno> turnos = query.getResultList();
             return turnos.stream()
                          .map(turno -> {
-                             turno.setTema(turno.getTema().toUpperCase()); // Ejemplo: transformar el tema
+                             turno.setTema(turno.getTema().toUpperCase()); 
                              return turno;
                          })
                          .toList();
