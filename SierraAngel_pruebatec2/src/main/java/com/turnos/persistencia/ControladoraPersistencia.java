@@ -8,10 +8,8 @@ import javax.persistence.*;
 
 public class ControladoraPersistencia {
 
-    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("TurnoPU");
-
-    private final CiudadanoJpaController ciudadanoJpa = new CiudadanoJpaController(emf);
-    private final TurnoJpaController turnoJpa = new TurnoJpaController(emf);
+    CiudadanoJpaController ciudadanoJpa = new CiudadanoJpaController();
+    TurnoJpaController turnoJpa = new TurnoJpaController();
 
     public void crearCiudadano(Ciudadano ciudadano) {
         ciudadanoJpa.create(ciudadano);
