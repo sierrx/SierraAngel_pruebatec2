@@ -1,4 +1,4 @@
-# Sistema_de_turnos
+# Sistema de turnos
 En este código se presenta un sistema para gestionar turnos en una base de datos a traves de un JSP (JavaServer Pages) .
 
 ## Funcionamiento
@@ -78,14 +78,11 @@ Este diagrama representa la arquitectura del sistema respetando las capas **JSP 
   - Es utilizada por la **ControladoraPersistencia** para realizar consultas y operaciones sobre la base de datos.
 
 
-### **Relaciones **
+### **Relaciones**
 - **JSP → Servlets**: Los JSP proporcionan datos a los Servlets.
 - **Servlets → Modelo**: Los Servlets delegan la lógica al modelo mediante la `ControladoraModel`.
 - **Modelo → Persistencia**: El modelo utiliza la `ControladoraPersistencia` para interactuar con los datos persistentes.
 - **Persistencia → BD**: La `ControladoraPersistencia` accede a la base de datos a través de los **JpaControllers**.
-
-
-
 
 
 ## Requisitos
